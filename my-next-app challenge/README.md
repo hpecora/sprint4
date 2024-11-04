@@ -8,6 +8,13 @@ next.config.js: Arquivo de configuração do Next.js, utilizado para definir op�
 tsconfig.json: Configuração do TypeScript, essencial para definir as opções de compilação do projeto.
 package.json: Contém as dependências do projeto e scripts para execução.
 
+API DO PROJETO: 
+A nossa API ela fooi feita para a pessoa digitar o seu CEP na página Guincho e aparecer o local onde ela e encontrar por exempl:
+CEP: 03122060
+RUA: Conego Antonio Lessa
+BAIRRO: Parque da Mooca
+UF: SP
+
 
 Diretório pages/
 Este diretório contém as principais páginas da aplicação. Abaixo, estão descrições detalhadas de cada página e como elas funcionam:

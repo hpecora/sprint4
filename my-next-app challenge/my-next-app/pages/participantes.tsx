@@ -34,7 +34,7 @@ export default function participantes() {
 
         <div className={styles.participant}>
           <img src={imgSANTHIAGO.src} alt="santhi" />
-          <p>Santhiago de Gobii</p>
+          <p>Santhiago De Gobbi Barros de Souza</p>
           <p>RM 98420</p>
         </div>
       </div>

@@ -9,7 +9,7 @@ tsconfig.json: Configuração do TypeScript, essencial para definir as opções 
 package.json: Contém as dependências do projeto e scripts para execução.
 
 API DO PROJETO: 
-A nossa API ela fooi feita para a pessoa digitar o seu CEP na página Guincho e aparecer o local onde ela e encontrar por exempl:
+A nossa API ela fooi feita para a pessoa digitar o seu CEP na página Guincho e aparecer o local onde ela e encontrar por exemplo:
 CEP: 03122060
 RUA: Conego Antonio Lessa
 BAIRRO: Parque da Mooca

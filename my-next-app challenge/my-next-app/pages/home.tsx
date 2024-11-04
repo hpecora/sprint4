@@ -35,7 +35,7 @@ export default function Home() {
         <div className={styles['testimonials-container']}>
           <div className={styles['testimonial-card']}>
             <div className={styles.icon}>👩</div>
-            <p>"Solicitei o guincho pelo motivo do meu carro ter quebrado e em menos de 15 minutos já estava sendo atendida."</p>
+            <p>"Solicitei o guincho porque meu carro quebrou e em menos de 15 minutos já estava sendo atendida."</p>
             <div className={styles.author}>Maria</div>
             <div className={styles.location}>São Paulo</div>
           </div>

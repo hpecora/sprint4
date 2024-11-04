@@ -38,7 +38,7 @@ export default function Guincho() {
                 .catch(error => {
                     console.error("Erro ao buscar o CEP:", error);
                     setEndereco({ logradouro: '', bairro: '', localidade: '', uf: '' });
-                    setGuinchoMensagem('Erro ao buscar o CEP. Tente novamente.');
+                    setGuinchoMensagem('CEP não encontrado. Tente novamente.');
                 });
         } else {
             setEndereco({ logradouro: '', bairro: '', localidade: '', uf: '' }); 

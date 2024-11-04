@@ -1,0 +1,100 @@
+.pageBackground {
+    background-color: #007bff;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .divForm {
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #005ca9;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: 500;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .select:focus {
+    border-color: #005ca9;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 92, 169, 0.25);
+  }
+  
+  .submitButton {
+    color: #fff;
+    background-color: #005ca9;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #004b8d;
+  }
+  
+  .cancelLink {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #fff;
+    background-color: #646262;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancelLink:hover {
+    background-color: #646262;
+  }
+  

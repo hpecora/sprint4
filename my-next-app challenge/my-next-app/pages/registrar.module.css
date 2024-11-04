@@ -1,0 +1,80 @@
+/* Login.module.css */
+
+.container {
+    display: flex;
+    height: 100vh;
+    font-family: "Poppins";
+}
+
+.imageSection {
+    flex: 1;
+    background-color: #f0f0f0; /* Cor de fundo para a seção da imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSection img {
+    max-width: 30%;
+    height: auto;
+}
+
+.formSection {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formSection h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.formSection label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.formSection input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submitButton {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db; 
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    width: 60%;   
+}
+
+.submitButton:hover {
+    background-color: #2980b9;
+}
+
+.submitRegistrar {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    text-align: start;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}

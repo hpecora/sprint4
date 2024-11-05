@@ -29,7 +29,7 @@ const AgendamentoForm = () => {
 
         <label className={styles.label} htmlFor="placaVeiculo">Placa do Veículo</label>
         <input
-          type="textt"
+          type="text"
           id="placaVeiculo"
           placeholder="Ex.: ABC-1234"
           value={placaVeiculo}

@@ -40,7 +40,7 @@ const AgendamentoForm = () => {
 
         <label className={styles.label} htmlFor="oficinaProxima">Oficina Mais Próxima</label>
         <input
-          type="text"
+          type="textt"
           id="oficinaProxima"
           placeholder="Ex.: Oficina Centro"
           value={oficinaProxima}

@@ -42,7 +42,7 @@ const AgendamentoForm = () => {
         <input
           type="text"
           id="oficinaProxima"
-          placeholder="Ex.: Oficina Centro SP"
+          placeholder="Ex.: Oficina Centro"
           value={oficinaProxima}
           onChange={(e) => setOficinaProxima(e.target.value)}
           className={styles.select}

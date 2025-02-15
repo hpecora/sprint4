@@ -1,0 +1,68 @@
+CREATE TABLE pais (
+    id_pais   NUMBER PRIMARY KEY,
+    nome_pais VARCHAR2(30)
+);
+
+CREATE TABLE estado (
+    id_estado   NUMBER PRIMARY KEY,
+    nome_estado VARCHAR2(30),
+    id_pais     NUMBER
+);
+
+ALTER TABLE estado ADD constraints pk_estado
+
+FOREIGN KEY ( ID_PAIS ) REFERENCE PAIS ( ID_PAIS );
+
+CREATE TABLE cidade (
+    id_cidade   NUMBER PRIMARY KEY,
+    nome_cidade VARCHAR2(30),
+    id_estado   NUMBER
+);
+
+ALTER TABLE cidade ADD constraints pk_cidade FOREIGN KEY (ID_ESTADO) REFERENCES ESTADOS (ID_ESTADO)
+
+CREATE TABLE bairro (
+    id_bairro   NUMBER PRIMARY KEY,
+    nome_bairro VARCHAR2(30),
+    id_cidade   NUMBER
+);
+
+ALTER TABLE BAIRRO ADD CONSTRAINTS PK_BAIRRO FOREIGN KEY (ID_CIDADE) REFERENCES CIDADE (ID_CIDADE);
+
+CREATE TABLE end_cliente (
+    id_end      NUMBER PRIMARY KEY,
+    logradouro  VARCHAR2(50),
+    numero      NUMBER,
+    cep         NUMBER,
+    id_tipo_log NUMBER,
+    referencia  VARCHAR2(30),
+    complemento VARCHAR2(30)
+);
+
+ALTER TABLE end_cliente
+    ADD CONSTRAINT pk_tipo_log FOREIGN KEY ( id_tipo_log )
+        REFERENCES tipo_logradouro ( id_tipo_log );
+
+CREATE TABLE CLIENTE(
+    id_cliente NUMBER PRIMARY KEY,
+    nome       VARCHAR2(100)
+     DATA NASC DATE,
+    cpf_cnpj NUMBER,
+    id_tipo_cli NUMBER,
+    id_genero NUMBER,
+    email VARCHAR2 ( 30 )
+     TELEFONE NUMBER
+);
+
+CREATE TABLE tipo_cliente (
+    id_tipo_cll NUMBER PRIMARY KEY,
+    descricao   VARCHAR2(30)
+);
+
+ALTER TABLE cliente
+    ADD CONSTRAINT pk_genero FOREIGN KEY ( id_genero )
+        REFERENCES genero ( id_genero );
+
+ALTER TABLE cliente
+    ADD CONSTRAINT pk_tipo_clt FOREIGN KEY ( id_tipo_cli )
+        REFERENCES tipo_cliente ( id_tipo_cli );

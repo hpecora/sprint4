@@ -48,8 +48,8 @@ export default function Home() {
       <div className="aviso">
         <strong>PROJETO ACADÊMICO • FIAP • 2024</strong>
         <span>
-          Desenvolvido em um desafio acadêmico em parceria com
-          a Porto Seguro. Protótipo educacional, não oficial.
+          Desenvolvido em um desafio acadêmico da FIAP em parceria com
+           a Porto Seguro. Protótipo educacional, não oficial.
         </span>
       </div>
 

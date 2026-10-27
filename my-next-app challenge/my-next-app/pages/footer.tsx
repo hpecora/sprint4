@@ -93,7 +93,7 @@ export default function SiteFooter() {
         <div className={styles.base}>
           <span>
             FIAP · Projeto acadêmico de 2024 ·
-            Redesign para portfólio
+            Redesign 2026 por Henrique Pecora Vieira de Souza
           </span>
 
           <span>

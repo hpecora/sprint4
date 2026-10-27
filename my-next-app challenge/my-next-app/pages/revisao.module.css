@@ -1,80 +1,547 @@
 
-  .container {
-    display: flex;
-    height: 99vh;
-    overflow: hidden;
-    
+.pagina {
+  min-height: 100vh;
+  background: #fff;
+  color: #17334f;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container .containerImg {
-    width: 20%;
-    margin-left: 30px;
-    transform: translateY(30%);
+.pagina * {
+  box-sizing: border-box;
 }
-  
-  .back-button {
-    background: #007bff;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
 
-  
-  .maincontent {
-    width: 75%;
-    background-color: #007bff;
-    padding: 20px;
-    color: #000;
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-    height: 100vh;
-  }
-  
-  .contentsection {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
+.aviso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 15px;
+  padding: 12px 20px;
+  background: #123456;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+}
 
-  
-  .checklist {
-    margin-top: 15px;
-    list-style-type: disc;
-    padding-left: 20px;
-    
-    
-  }
-  
-  .checklist span{
-    color: #000;
-  }
-  
-  .checklist li {
-    list-style-type: none;
-    text-align: justify;
+.aviso span {
+  color: #e2edf8;
+}
+
+.cabecalho {
+  max-width: 1160px;
+  margin: auto;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #193852;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.marca span {
+  color: #087bf0;
+}
+
+.marca svg {
+  font-size: 27px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.menu a {
+  color: #536d86;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.menu a:hover {
+  color: #087bf0;
+}
+
+.conteudo {
+  max-width: 1160px;
+  margin: auto;
+  padding: 35px 20px 80px;
+}
+
+.voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #5e7b96;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.etiqueta {
+  display: block;
+  color: #087bf0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 115px;
+}
+
+.heroTexto h1 {
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.13;
+  letter-spacing: -1.5px;
+  margin: 25px 0;
+}
+
+.heroTexto h1 em {
+  display: block;
+  font-style: normal;
+  color: #087bf0;
+}
+
+.heroTexto > p {
+  max-width: 490px;
+  color: #71879c;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.botaoPrimario {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 16px 22px;
+  background: #087bf0;
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 10px 25px #087bf025;
+  transition: background .2s, transform .2s;
+}
+
+.botaoPrimario:hover {
+  background: #0065d0;
+  transform: translateY(-2px);
+}
+
+.heroInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  color: #607b92;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.heroInfo svg {
+  color: #0da98e;
+  flex-shrink: 0;
+}
+
+.heroImagem {
+  position: relative;
+  min-height: 400px;
+  border-radius: 24px;
+  background: #dceaf5;
+  box-shadow: 0 25px 60px #112d4820;
+}
+
+.foto {
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.seloImagem {
+  position: absolute;
+  bottom: 23px;
+  left: -20px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 12px 30px #112d4820;
+}
+
+.seloImagem > svg {
+  font-size: 24px;
+  color: #087bf0;
+}
+
+.seloImagem div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.seloImagem strong {
+  font-size: 13px;
+}
+
+.seloImagem span {
+  font-size: 11px;
+  color: #748ca0;
+}
+
+.sistemas {
+  padding: 65px 40px 40px;
+  background: #f3f8fd;
+  border-radius: 28px;
+  scroll-margin-top: 20px;
+}
+
+.secaoTopo {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.secaoTopo h2 {
+  font-size: clamp(29px, 3.5vw, 42px);
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+.secaoTopo p {
+  color: #70869a;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.card {
+  min-height: 205px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 18px;
+  padding: 23px;
+  color: #17334f;
+  font-family: inherit;
+  box-shadow: 0 8px 25px #12345608;
+  cursor: pointer;
+  transition: transform .2s, border-color .2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card:focus-visible {
+  outline: 3px solid #8cc5ff;
+  outline-offset: 3px;
+}
+
+.cardAtivo {
+  border-color: #087bf0;
+}
+
+.cardTopo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardTopo > span {
+  color: #a3b5c5;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cardIcone {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  background: #e8f3ff;
+  color: #087bf0;
+  border-radius: 13px;
+  font-size: 23px;
+}
+
+.card h3 {
+  font-size: 20px;
+  letter-spacing: -.4px;
+  margin: 22px 0 8px;
+}
+
+.card p {
+  margin: 0;
+  color: #8196a8;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #087bf0;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: auto;
+  padding-top: 23px;
+}
+
+.painel {
+  margin-top: 26px;
+  padding: 38px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid #dfebf5;
+}
+
+.painelTopo {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e4edf5;
+}
+
+.painelTopo h3 {
+  font-size: 30px;
+  letter-spacing: -.8px;
+  margin: 12px 0;
+}
+
+.painelTopo p {
+  color: #6e879b;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 780px;
+  margin: 0;
+}
+
+.painelConteudo {
+  display: grid;
+  grid-template-columns: 1fr 0.75fr;
+  gap: 45px;
+  margin-top: 28px;
+}
+
+.painelConteudo h4 {
+  font-size: 18px;
+  margin: 0 0 22px;
+}
+
+.checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #38556e;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.checklist svg {
+  color: #0da98e;
+  flex-shrink: 0;
+}
+
+.painelDestaque {
+  background: #eaf4ff;
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.painelDestaque svg {
+  color: #087bf0;
+  font-size: 24px;
+}
+
+.painelDestaque strong {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.painelDestaque p {
+  color: #688198;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  margin: 80px 0 50px;
+  padding: 55px;
+  background: #123456;
+  border-radius: 24px;
+  color: #fff;
+}
+
+.cta .etiqueta {
+  color: #7fc4ff;
+}
+
+.cta h2 {
+  font-size: clamp(27px, 3vw, 38px);
+  letter-spacing: -1.2px;
+  line-height: 1.25;
+  margin: 15px 0;
+}
+
+.cta p {
+  color: #cad9e7;
+  max-width: 530px;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.cta .botaoPrimario {
+  flex-shrink: 0;
+}
+
+.rodapeAviso {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  border-top: 1px solid #e4edf5;
+  padding: 25px 0;
+  color: #8196a9;
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.rodapeAviso svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 950px) {
+  .hero {
+    gap: 35px;
   }
 
-  .inspectionimage {
+  .grade {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .painelConteudo {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 760px) {
+  .cabecalho {
+    flex-direction: column;
+  }
+
+  .menu {
+    justify-content: center;
+    gap: 12px 20px;
+  }
+
+  .conteudo {
+    padding: 30px 16px 55px;
+  }
+
+  .voltar {
+    margin-bottom: 35px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    margin-bottom: 65px;
+  }
+
+  .heroImagem {
+    min-height: 300px;
+  }
+
+  .seloImagem {
+    left: 12px;
+  }
+
+  .sistemas {
+    padding: 35px 20px;
+    border-radius: 20px;
+  }
+
+  .painel {
+    padding: 26px;
+  }
+
+  .painelConteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 35px 28px;
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTexto h1 {
+    font-size: 39px;
+  }
+
+  .grade {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 185px;
+  }
+
+  .painel {
+    padding: 22px;
+  }
+
+  .cta .botaoPrimario {
     width: 100%;
-    max-width: 500px; /* Ajuste este valor conforme necessário */
-    margin-top: 20px;
-    border-radius: 8px;
-    margin-left: 0px;
   }
-  
-  
-  
-  
+}

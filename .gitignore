@@ -1,0 +1,20 @@
+
+# Dependências
+**/node_modules/
+
+# Arquivos temporários do Next.js
+**/.next/
+**/out/
+**/.vercel/
+
+# Informações privadas
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs
+*.log
+*.tsbuildinfo
+
+# Pasta duplicada criada durante a transferência
+/my-next-app-challenge/
